@@ -18,10 +18,10 @@ left_side_sum = 0
 right_side_sum = 0
 
 while bilet_number > 0:
-    if bilet_number >= 1000:
+    if bilet_number >= 1000: #пока не дойдем до середины, считаем правую часть
         right_side_sum += bilet_number % 10
         bilet_number = bilet_number // 10
-    else:
+    else: # потом левую
         left_side_sum += bilet_number % 10
         bilet_number = bilet_number // 10
 
